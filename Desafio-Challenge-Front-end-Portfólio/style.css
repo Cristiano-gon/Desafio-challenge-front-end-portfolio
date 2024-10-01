@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+/* ESTILO GERAL */
+
+:root {
+    --corfundo: #F5F5F5;
+    --corbox_1:#1f9b612a;
+    --corbox_2: #147e3717; 
+    --fonte-padrao: Raleway, Arial, Verdana;
+}
+
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: rgba(0, 255, 255, 0.171);
+    width: 100%;
+    height: 100vh;
+}
+main {
+    padding: 0px 3%; 
+}
+
+/* CABECALHO*/
+header {
+    padding: 0px 3%;
+}
+.cabecalho_container {
+    background-color: var(--corbox_1);
+    height: 80px;
+    width: 100%;
+    margin:0 auto;
+    padding: 40px 3%;
+}
+.simbolo {
+    width:20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.nome {
+    font-size: 0.8rem;
+}
+.lista_menu {
+    list-style-type: none;
+}
+.itens_menu {
+    font-size: 0.8;
+    list-style-type: none;
+    margin: 10px; 
+}
+.links_menu {
+    text-decoration: none;
+    color: black;
+}
+.links_menu:hover {
+    color: rgb(131, 115, 115);
+    transform: scale(1.10);
+    display: inline-block;
+    transition: 0.2s;
+    font-weight: 900;
+}
+.email {
+    font-size: 1.1em;
+    font-weight: 800;
+    cursor: pointer;
+}
+.email:hover {
+    color: rgb(131, 115, 115);
+    transform: scale(1.10);
+    transition: 0.2s; 
+}
+
+/* APRESENTACAO */
+.apresentacao_conteudo {
+    height: 400px;
+    padding: 40px 3%;  
+}
+.titulo {
+    font-size: 3.3em;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+.subtitulo {
+    font-size: 1.3em;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.redes_sociais {
+    list-style-type: none;
+}
+.redes_social {
+    color: black;
+    text-decoration: none;
+    margin-right: 50px;
+    gap: 5px;
+}
+.icone {
+    width: 20%;
+}
+.redes_social:hover {
+    color: rgb(131, 115, 115);
+    transform: scale(1.10);
+    font-weight: 900;
+    transition: 0.2s;
+    cursor: pointer; 
+}
+.foto_perfil {
+    width: auto;
+}
+
+/* SOBRE MIM */
+.container_sobre_mim {
+    background-color: var(--corbox_2);
+    padding: 40px 3%;
+}
+.sobre_mim_conteudo {
+    width: 70%;
+}
+.titulo_sobre_mim {
+    margin-bottom: 20px;
+}
+.sobre_mim_descricao {
+    text-indent: 30px;
+}
+
+/* Hobbies e Soft Skills */
+.skills_hobbies {
+    background-color: var(--corbox_1);
+    margin: auto;
+}
+.area_skills {
+    width: auto;
+}
+.titulos_skills_hobbies {
+    text-align: center;
+    padding: 1%;
+    margin: auto;
+    font-size: 28px;
+    font-weight: 800;
+    margin: auto;
+    height: 80px;
+    margin-top: 20px;
+}
+.area_hobbies {
+    width: auto;
+}
+.area_formacao_academica {
+    width: auto;
+}
+.item_box_formacao {
+    list-style-type: none;
+}
+
+.skills_box, .hobbies_box, .formacao_academica_box {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    list-style-type: none;
+}
+
+/* Experiência em programação  */
+.container_experiencia {
+    background-color: var(--corbox_2);
+    height: 950px;
+    padding: 40px 3%;  
+}
+.lista_experiencia {
+    height: auto;
+    list-style-type: none;
+}
+.item {
+    list-style-type: none;
+    height: 406px;
+    margin: auto;
+    gap: 40px;
+}
+.item-reverse {
+    margin: auto;
+    list-style-type: none;
+    height: 406px;
+}
+.elementos_texto {
+    line-height: 15px;
+}
+.botao_repositorio {
+    background-color: transparent;
+    height: 40px;
+    width: 80px;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+}
+.botao_repositorio:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.botao_azul {
+    background-color: #2A7AE4;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border: none;
+}
+.botao_azul:hover {
+    transform: scale(1.10);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.item_subtitulo_formacao {
+    line-height: 20px;
+    font-size: 0.8em;
+}
+
+/* Formulario Contato */
+.formulario_contato {
+    padding: 0px 3%;
+}
+.contato_conteudo {
+    width: 100%;
+    max-width: 500px;
+}
+.textos_formularios {
+    padding: 3%;
+}
+form {
+    width: 500px;
+    max-width:1400px ;
+    margin-top: 30px 10px;
+    min-width: 350px ;
+    padding: 3%;
+    font-size: 1em;
+    width: 100%;
+}
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    padding: 20px 15px;
+    border-radius: 5px;
+    color: rgba(68, 19, 19, 0.637);
+    font-size: 1.1em;
+    font-weight: 700;
+}
+form textarea {
+    resize:none;
+    max-height: 100px;
+}
+.botao_enviar input {
+    width: 250px;
+    background-color: #2A7AE4;
+    color: #EAF2FD;
+    cursor: pointer;
+}
+.botao_enviar:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+/* Footer */
+.container_rodape {
+    background-color: var(--corbox_1);
+    height: 70px;
+    font-weight: 700;
+    width: 94%;
+    margin: auto;  
+}
+
+@media (max-width:768px) {
+    /* CABECALHO */
+    .email {
+        font-size: 0.9em;
+    }
+    /* APRESENTACAO */
+    .apresentacao_conteudo {
+        height: auto;
+        padding: 1px 3%;  
+    }
+    .titulo {
+        font-size: 1.5em;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .subtitulo {
+        font-size: 0.7em;
+        line-height: 15px;
+        margin-bottom: 0px;
+    }
+    .foto_perfil {
+        width: 100%;
+        
+    }
+    .textos_links {
+        height: 140px;
+    }
+
+    /* SOBRE MIM */
+    .sobre_mim_conteudo {
+        width: 100%;
+    }
+
+    /* Experiencia em Programacao */
+    .container_experiencia {
+        height: auto;
+        width: auto;
+    }
+    .item {
+        margin-bottom: 30px;
+    }
+    .foto_decodificador, .foto_numero_secreto {
+        width: 90%;
+    }
+    .botao_enviar {
+        margin: auto;
+    }
+    /* FORMULARIO */
+}
+
+@media (max-width:360px) {
+    /* Estilos para telas de até 360px de largura */
+    /* CABECALHO */
+    .cabecalho_container {
+        height: auto;
+        width: auto;
+        padding: 10px 3%;
+    }
+    .nome {
+        font-size: 0.5em;
+    }
+    .email {
+        font-size: 0.7em; 
+        margin-bottom: 2.9px;
+    }
+
+    /* APRESENTACAO */
+    .apresentacao_conteudo {
+        height: 425px;
+        width: auto;
+        padding: 10px 10%;  
+        text-align: left;
+        margin: auto;
+    }
+    .textos {
+        margin-top: 70px; 
+    }
+    .textos {
+       margin-left: 30px;
+       margin-right: 10px; 
+    }
+    .titulo {
+        line-height: 25px;
+    }
+    .subtitulo_apresentacao {
+        margin-right: 10px;
+    }
+    .redes_sociais {
+        margin-left: 35px;
+    }
+    .foto_perfil {
+        width: 200px;
+    }
+    
+    /* SOBRE MIM */
+    .container_sobre_mim {
+        padding: 10px 3%;
+    }
+
+    .sobre_mim_conteudo {
+        width: 100%;
+    }
+
+    /* Hobbies e Soft Skills */ 
+    .titulos_skills_hobbies {
+        height: 45px;
+    }
+    .item_box_formacao {
+        text-align: center;
+    }
+
+/* Experiência em programação  */
+    .container_experiencia {
+    height: auto;
+    padding: 20px 3%;  
+    }
+.lista_experiencia {
+    height:auto;
+    }
+    .item, .item-reverse {
+        height: auto;
+    }
+    .item {
+        margin-bottom: 2px;
+    }
+.foto_decodificador, .foto_numero_secreto {
+    width: 100%;
+    padding: 2%;
+    }
+.foto_numero_secreto {
+    margin-right: 50px;
+    }
+.elementos_texto, .botoes {
+    margin-left: 10px;
+    }
+.botao_repositorio {
+    height: 30px;
+    width:80px;
+    }
+.botao_azul {
+    height: 30px;
+    width: 80px;
+    }
+
+/* Formulario Contato */
+.foto_formulario {
+    display: none;
+    }
+.botao_enviar {
+    margin: auto;
+    }
+form input, form textarea {
+    width: 95%;
+    }
+/* Rodapé */
+.container_rodape {
+    text-align:center;
+    }
+}
